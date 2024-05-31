@@ -62,6 +62,7 @@ function AllProducts() {
         
         {categories
         .filter((value)=>value.title.toLowerCase().includes(search))
+
         .map((item) => (
           <Card key={item.id} sx={{ maxWidth: 345 }}>
             <CardMedia
@@ -69,11 +70,11 @@ function AllProducts() {
               alt={item.title}
               height="200"
               width="200"
-              image={item.thumbnail}
+              image={item.images[0]}
               sx={
                 {
                   objectFit:"cover"
-                }
+                }   
               }
             />
             <CardContent>

@@ -13,7 +13,7 @@ function Home() {
       <p>Discover the best product at unbeatable price</p>
       <a href='/category'>      <Button variant="outlined" endIcon={<SendIcon />}>
         SHOP NOW
-      </Button></a>
+      </Button></a>  
 
       </div>
       <div className='sub-container'>
