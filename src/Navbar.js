@@ -18,9 +18,7 @@ import Logo from "./components/assets/logo.png";
 const pages = [
   { title: "Home", path: "/" },
   { title: "Category", path: "/Category" },
-  { title: "Contact", path: "/contact" },
   { title: "Products", path: "/Products" },
-  { title: "About", path: "about" },
 ];
 
 function ResponsiveAppBar() {
