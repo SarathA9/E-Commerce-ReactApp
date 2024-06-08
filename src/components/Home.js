@@ -1,9 +1,8 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
-import Stack from '@mui/material/Stack';
-import './style.css'
+import './style.css';
+import Image from './assets/home.png';
 
 function Home() {
   return (
@@ -13,11 +12,11 @@ function Home() {
       <p>Discover the best product at unbeatable price</p>
       <a href='/category'>      <Button variant="outlined" endIcon={<SendIcon />}>
         SHOP NOW
-      </Button></a>
+      </Button></a>  
 
       </div>
       <div className='sub-container'>
-        <img src='https://www.pixel-studios.com/ecommerce-website-development/images/hero-illustration-2.png'></img>
+        <img src={Image} alt='background image' ></img>
       </div>
     </div>
   );
