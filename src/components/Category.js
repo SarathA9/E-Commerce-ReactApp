@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Grid, Paper, Typography } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
-import { Shop2Outlined } from "@mui/icons-material";
 
 export default function Category() {
   const [categories, setCategories] = useState([]);
@@ -38,7 +37,7 @@ export default function Category() {
               elevation={3}
               style={{
                 height: "100%",
-                padding: 3,
+                padding: 8,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
