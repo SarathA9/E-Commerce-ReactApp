@@ -65,7 +65,6 @@ function ResponsiveAppBar() {
             <img src={Logo} alt="Logo" style={{ height: "60px", width: "auto" }} />
           </Box>
           
-          {/* Spacer to push the logo to the left and the menu to the right */}
           <Box sx={{ flexGrow: 1 }} />
 
           {/* Menu items for large screens */}

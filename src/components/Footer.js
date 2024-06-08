@@ -42,21 +42,11 @@ export default function ColorInversionMarketing() {
             '& > *': { flexGrow: 1, fontWeight: 'lg' },
           }}
         >
-        <a href="https://github.com/SarathA9/React-Card-Concept" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+        <a href="https://github.com/SarathA9/E-Commerce-ReactApp" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             <Button sx={{ minWidth: 8, maxWidth:80 }}>
                 <GitHubIcon />GitHub
             </Button>
         </a>
-          <Button
-            variant="plain"
-            endDecorator={<ArrowForwardIcon fontSize="md" />}
-            sx={{
-              '&:hover': { '--Button-gap': '0.625rem' },
-              '& span': { transition: '0.15s' },
-            }}
-          >
-          {/* <Link className='link-text' to="/"><Button className='' variant="contained" ></Button></Link>            */}
-          </Button>
         </Box>
       </Box>
       <Box
