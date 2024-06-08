@@ -157,7 +157,7 @@ function AllProducts() {
                         variant="h5"
                         sx={{ fontSize: getFontSize(16) }}
                       >
-                        ₹{item.price}
+                        ${item.price}
                       </Typography>
                     )}
                     {expanded === item.id && (

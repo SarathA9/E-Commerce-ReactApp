@@ -79,7 +79,6 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           
-          {/* Mobile menu button */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
