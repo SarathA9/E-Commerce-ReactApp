@@ -3,8 +3,8 @@ import { Container, Typography, Grid, Card, CardContent, CardMedia, Box } from '
 import { styled } from '@mui/system';
 import Zoom from '@mui/material/Zoom';
 import Fade from '@mui/material/Fade';
-import teamImage from '../assets/team.jpg'; 
-import missionImage from '../assets/team.jpg'; 
+import teamImage from './assets/team.jpg'; 
+import missionImage from './assets/team.jpg'; 
 
 const Heading = styled(Typography)(({ theme }) => ({
   fontSize: '2.5rem',
