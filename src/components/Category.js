@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Grid, Paper, Typography } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
+import Bg from './assets/bg2.jpg';
 
 export default function Category() {
   const [categories, setCategories] = useState([]);
@@ -18,8 +19,8 @@ export default function Category() {
   }, []);
 
   return (
-    <div style={{ marginTop: 10, padding: 20 }}>
-      <h1 style={{ alignItems: "center", textAlign: "center" }}>Category</h1>
+    <div style={{ marginTop: 10, padding: 0,textAlign:"center" }}>
+      {/* <h1 style={{ alignItems: "center", textAlign: "center" }}>Category</h1> */}
       <Grid
         container
         sx={{
@@ -41,11 +42,16 @@ export default function Category() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "#09824b",
+                background: `linear-gradient(to right, rgba(255, 140, 0, 0.8), rgba(255, 69, 0, 0.6)), url(${Bg})`,
+                backgroundSize: 'cover',
+                backgroundBlendMode: 'overlay',
+                backgroundPosition: 'center',
+                objectFit: 'contain',
+                color:"black"
               }}
             >
               <Link to={`/Products/${item.slug}`} style={{ textDecoration: "none" }}>
-                <Typography sx={{ textTransform: "uppercase", color: "white" }}>
+                <Typography sx={{ textTransform: "uppercase", color: "black",fontWeight:"500",fontFamily:"Rajdhani" }}>
                   {item.name}
                 </Typography>
               </Link>

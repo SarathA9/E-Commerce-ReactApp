@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
 
   const drawerList = (
     <Box
-      sx={{ width: 250 }}
+      sx={{ width: 250, fontFamily: "Rajdhani" }} // Added fontFamily here
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
@@ -71,7 +71,7 @@ function ResponsiveAppBar() {
               <Link key={page?.title} to={page?.path} style={{ textDecoration: "none" }}>
                 <Button
                   onClick={toggleDrawer(false)}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "white", display: "block", fontFamily: "Rajdhani" }}
                 >
                   {page?.title}
                 </Button>
@@ -79,6 +79,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           
+          {/* Drawer for small screens */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
