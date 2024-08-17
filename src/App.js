@@ -8,7 +8,6 @@ import Products from "./components/Products";
 import AllProducts from "./components/AllProducts";
 import Footer from './components/Footer'
 
-
 function App() {
   return (
     <>
